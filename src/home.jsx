@@ -1,4 +1,6 @@
 import React from 'react'
+import cover from './cover.svg'
+import Logo from './logo.svg'
 import toast, { Toaster } from 'react-hot-toast';
 
 import { Link } from 'react-router-dom';
@@ -14,7 +16,7 @@ function Home() {
                     <div className="flex-shrink-0 pt-0.5">
                         <img
                             className="h-10 w-10 rounded-full shadow-md p-1"
-                            src="/logo.svg"
+                            src={Logo}
                             alt=""
                         />
                     </div>
@@ -58,7 +60,7 @@ function Home() {
                     </Link>
                 </div>
                 <div className='order-1 sm:order-2 sm:mr-4'>
-                    <img loading='lazy' role={'banner'} className='w-3/4 mx-auto sm:w-full object-cover scale-75 sm:scale-125' src="./cover.svg" alt="Get your New Book Collection" />
+                    <img loading='lazy' role={'banner'} className='w-3/4 mx-auto sm:w-full object-cover scale-75 sm:scale-125' src={cover} alt="Get your New Book Collection" />
                 </div>
             </div>
         </main>
